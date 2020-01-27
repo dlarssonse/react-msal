@@ -78,7 +78,9 @@ export const useReactMSAL = ({
     keys.push(`msal.${process.env.MS_CLIENT_ID}.error.description`);
     keys.push(`msal.${process.env.MS_CLIENT_ID}.client.info`);
 
-    for (let key in keys) {
+    for (let index in keys) {
+      let key = keys[index];
+      console.log("removing key: " + key);
       if (cookies.get(key)) cookies.remove(key, { path: "/" });
       if (localStorage.getItem(key)) localStorage.removeItem(key);
     }
