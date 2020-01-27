@@ -1,10 +1,13 @@
 {
   "name": "react-msal",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "author": "dlarssonse",
   "license": "MIT",
-  "repository": "dlarssonse/react-msal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlarssonse/react-network.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -18,10 +21,13 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
+    "predeploy": "yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "msal": "^1.2.1",
+    "universal-cookie": "^4.0.3"
+  },
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
