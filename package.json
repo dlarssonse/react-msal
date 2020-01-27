@@ -1,12 +1,20 @@
 {
-  "name": "react-msal",
+  "name": "@dlarsson-se/react-msal",
   "version": "0.1.0",
-  "description": "",
-  "author": "dlarssonse",
+  "description": "Functions for authentication with MS",
+  "author": "David Larsson <dlarsson.se@gmail.com> (https://www.dlarsson.se)",
+  "keywords": [
+    "msal",
+    "ms",
+    "azure",
+    "auth",
+    "openid",
+    "typescript"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dlarssonse/react-network.git"
+    "url": "git+https://github.com/dlarssonse/react-msal.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
